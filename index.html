@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+        body{
+            background: #DCDCDC;
+        }
+        .w3-main {
+            box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+            background: #fff;
+            width: 60%;
+            margin: 0 auto;
+            height: 100%;
+        }
+    </style>
+
+    <body>
+        <!-- NAVBAR -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+                <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-white" style="margin-left:20%">About</a>
+                <a href="#projects" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projects</a>
+                <a href="#teaching" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Teaching</a>
+                <a href="#publications" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Publications</a>
+            </div>
+        </div>
+
+
+        <div class="w3-main" style="margin-left">
+            <div class="w3-row w3-padding-64">
+                <!-- ABOUT ME -->
+                <div class="w3-twothird w3-container" id="about">
+                    <div>
+                        <h1 class="w3-text-teal">Kateřina Macková</h1>
+                        <p>PhD student at Faculty of Mathematics and Physics, Charles University.</p>
+                        <p>
+                            <div class="w3-medium"><i class="fa fa-envelope w3-hover-text-black w3-margin-right"></i>katerina.mackova@mff.cuni.cz</div>
+                            <div class="w3-medium"><i class="fa fa-clock-o w3-hover-text-black w3-margin-right"></i>After the email consultation</div>
+                            <div class="w3-medium"><i class="fa fa-map-marker w3-hover-text-black w3-margin-right"></i>Malostranské náměstí, Prague 1, 118 00 </div>
+                        </p>
+                        <p>
+                            <div class="w3-medium">
+                                <a href="https://github.com/kackamac/"><i class="fa fa-github w3-hover-opacity"></i></a>
+                                <a href="https://www.linkedin.com/in/katerina--mackova/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+                                <a href="https://orcid.org/0000-0001-9815-2763"><img src="images/orcid_logo_icon.png" width="13" alt="orcid" class="w3-round-large w3-image"></a>
+                            </div>
+                        </p>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <h4><b>Main Research Interests</b></h4>
+                        <ul>
+                            <li>
+                                <strong>Artificial Intelligence</strong>
+                                <ul>
+                                    <li>Neural Network</li>
+                                    <li>Deep Learning</li>
+                                    <li>Evolutionary Algorithms</li>
+                                    <li>Machine Learning</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Natural Language Processing</strong>
+                                <ul>
+                                    <li>Handwritten Text Recognition</li>
+                                    <li>Question Answering</li>
+                                    <li>Information Retrieval</li>
+                                </ul>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+
+                <div>
+                	<img src="images/me.jpg" class="w3-round-large w3-image" alt="Picture of me" width="200" style="margin-top:40px">
+                </div>
+
+                <!-- PROJECTS -->
+                <div class="w3-row w3-padding-16"  id="projects">
+                    <div class="w3-twothird w3-container">
+                        <h1 class="w3-text-teal">Projects</h1>
+                        <div>
+                            <h4><b>Searching in Handwritten Czech Documents</b></h4>
+                            <p><i>Disseration topic at KTIML MFF UK</i></p>
+                            <p>This project focuses on processing Czech handwritten documents mainly from the first half of the 20th century, i.e., from the period of the Austro-Hungarian Empire and the First Republic, when both Czech and German were commonly used. The documents will be digitized into their textual forms and made available for querying by keywords and asking questions related to the content of the text and receive answers to them. Moreover, searching for information and answering the questions within multiple documents will be enabled. All the models will enable an exploration of current documents as well as the historical documents century to retrieve information from them for further historical research.</p>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <h4><b><a href="http://www.hiu.cas.cz/cs/granty/naki-(mk).ep/">NAKI:</a> Sources of Krkonoše</b></h4>
+                            <p><i>Project at UFAL MFF UK</i></p>
+                            <p>This project is one part of the Program of Applied Research and Development of National and Cultural Identity (NAKI II), provided by the Ministry of Culture. The main intention of the NAKI project is to make information sources about the history and cultural memory of Krkonoše publicly available in one virtual place regardless of locations of institutions where the original documents are stored. It will be achieved by making a web interface and database for evidence, processing, and presentation of the history of Krkonoše. The output of the NAKI project is a web interface that will enable creating metadata descriptions of collected data about the history of Krkonoše and a database for the inserting of documents from the first half of the 20th century and their editing via the web interface.</p>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <h4><b>Multingual Transfer for Question Answering</b></h4>
+                            <p><i>Master Thesis at UFAL MFF UK</i></p>
+                            <p>Question Answering is a computer science discipline in the field of Natural Language Processing and Information Retrieval. Its goal is to buil a system that can automatically find the answer to certain question in the text with understanding of the meaning of the text. Reading comprehension used for Question Answering is a well studied task, with huge training datasets in English. This project focuses on building reading comprehension systems for Czech, without requiring any manually annotated Czech training data using text translation and cross-lingual transfer models.</p>
+                        </div>
+                        
+                        <br>
+                        
+                        <div>
+                            <h4><b>Generator of nanotubes</b></h4>
+                            <p><i>Bachelor's Thesis at KAM MFF UK</i></p>
+                            <p>The clay mineral called halloysite with crystalline structure is widely used in the world of physics due to its effective properties. The main goal of this thesis is to create a program that creates various tubular nanostructures of this material according to input crystal cell and other parameters. After the creation, whole halloysite structure can be used for other physical research.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TEACHING -->    
+                <div class="w3-row w3-padding-16"  id="teaching">
+                    <div class="w3-twothird w3-container">
+                        <h1 class="w3-text-teal">Teaching</h1>
+                        <div>
+                            <h4><b>Nature Inspired Algorithms (Přírodou inspirované algoritmy) <a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NAIL119">[NAIL119]</a></b></h4>
+                            <p><i>Summer semester (Thursday, 15:40), 2/2, Z+Zk, 5 credits</i></p>
+                            <p>In this subject, basic algorithms inspired by nature as Evolutionary Algorithms and Neural Networks and their applications for solving optimization problems and machine learning are presented. During the practicals, some of these algorithms are implemented and used to solve interesting problems in given areas.</p>
+                            <p>The materials for the practicals are available on <a href="https://github.com/kackamac/Prirodou-inspirovane-algoritmy">Github</a>.</p>
+                            <p>The lecture is taught by Martin Pilát and the materials are available on <a href="https://www.martinpilat.com/cs/prirodou-inspirovane-algoritmy/">this website</a>.</p>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <h4><b>Individual Software Project (Ročníkový projekt) <a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NPRG045">[NPRG045]</a></b></h4>
+                            <p><i>Both semesters, 0/1, Z, 4 credits</i></p>
+                            <p>It is possible to arrange to work on an Individual Software Project under my supervision. I am concerned about topics from Artificial Intelligence and Nature Language Processing. If you are interested in any of these topics, you can contact me by email and we can come up with some interesting topics for you project of I can refer you to other relevant possible supervisors.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PUBLICATIONS -->
+                <div class="w3-row w3-padding-16"  id="publications">
+                    <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">Publications</h1>
+                        <ul>
+                            <li>MACKOVÁ, Kateřina; STRAKA, Milan. Reading Comprehension in Czech via Machine Translation and Cross-Lingual Transfer. In: International Conference on Text, Speech, and Dialogue. Springer, Cham, 2020. p. 171-179./li>
+                        </ul>
+                    </div>
+                </div>
+            </div>   
+        
+        
+          <!-- FOOTER -->
+          <footer id="myFooter">
+              <div class="w3-container w3-center w3-theme-l2 w3-padding-6">
+                  <p>This is the end of the page.</p>
+              </div>
+              <div class="w3-container w3-center w3-theme-l1">
+                  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+              </div>
+          </footer>
+		</div>
+        <script>
+        </script>
+    </body>
+</html>
