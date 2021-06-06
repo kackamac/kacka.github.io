@@ -2,24 +2,40 @@
 <html lang="en">
     <title>W3.CSS Template</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;">
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+	
     <style>
         html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         body{
-            background: #DCDCDC;
+            background: #dcdcdc;
         }
         .w3-main {
             box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
-            background: #fff;
+            background: #ffffff;
             width: 60%;
             margin: 0 auto;
             height: 100%;
+			text-align: justify;
+			position: relative;
         }
+
+		@media screen and (max-width: 1000px) {
+		  .left, .w3-main, .right {
+			width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+		  }
+		}
+
+		.w3-row {
+			margin: 3%;
+		}
+		
+
     </style>
 
     <body>
@@ -33,13 +49,12 @@
             </div>
         </div>
 
-
-        <div class="w3-main" style="margin-left">
-            <div class="w3-row w3-padding-64">
+        <div class="w3-main">
+            <div class="w3-row w3-padding-32">
                 <!-- ABOUT ME -->
-                <div class="w3-twothird w3-container" id="about">
-                    <div>
-                        <h1 class="w3-text-teal">Kateřina Macková</h1>
+                <div class="w3-container" id="about">		
+					<h1 class="w3-text-teal">Kateřina Macková</h1>
+                    <div class="w3-twothird w3-container" style="margin-left:-16px">                     
                         <p>PhD student at Faculty of Mathematics and Physics, Charles University.</p>
                         <p>
                             <div class="w3-medium"><i class="fa fa-envelope w3-hover-text-black w3-margin-right"></i>katerina.mackova@mff.cuni.cz</div>
@@ -50,44 +65,45 @@
                             <div class="w3-medium">
                                 <a href="https://github.com/kackamac/"><i class="fa fa-github w3-hover-opacity"></i></a>
                                 <a href="https://www.linkedin.com/in/katerina--mackova/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-                                <a href="https://orcid.org/0000-0001-9815-2763"><img src="images/orcid_logo_icon.png" width="13" alt="orcid" class="w3-round-large w3-image"></a>
+                                <a href="https://orcid.org/0000-0001-9815-2763"><i class="ai ai-orcid w3-hover-opacity"></i></a>
                             </div>
                         </p>
-                    </div>
+                    </div>             
 
-                    <br>
-
-                    <div>
-                        <h4><b>Main Research Interests</b></h4>
-                        <ul>
-                            <li>
-                                <strong>Artificial Intelligence</strong>
-                                <ul>
-                                    <li>Neural Network</li>
-                                    <li>Deep Learning</li>
-                                    <li>Evolutionary Algorithms</li>
-                                    <li>Machine Learning</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <strong>Natural Language Processing</strong>
-                                <ul>
-                                    <li>Handwritten Text Recognition</li>
-                                    <li>Question Answering</li>
-                                    <li>Information Retrieval</li>
-                                </ul>
-                            </li>
-                        </ul> 
-                    </div>
-                </div>
-
-                <div>
-                	<img src="images/me.jpg" class="w3-round-large w3-image" alt="Picture of me" width="200" style="margin-top:40px">
-                </div>
+					<div class="w3-third w3-container">
+						<img src="images/me.jpg" class="w3-round-large w3-image" alt="Picture of me" width="200">
+					</div>
+				</div>
+				
+				<!-- RESEARCH -->
+				<div class="w3-padding-8"  id="research">
+					<div class="w3-container">
+						<h4><b>Main Research Interests</b></h4>
+						<ul>
+							<li>
+								<strong>Artificial Intelligence</strong>
+								<ul>
+									<li>Neural Network</li>
+									<li>Deep Learning</li>
+									<li>Evolutionary Algorithms</li>
+									<li>Machine Learning</li>
+								</ul>
+							</li>
+							<li>
+								<strong>Natural Language Processing</strong>
+								<ul>
+									<li>Handwritten Text Recognition</li>
+									<li>Question Answering</li>
+									<li>Information Retrieval</li>
+								</ul>
+							</li>
+						</ul> 
+					</div>
+				</div>
 
                 <!-- PROJECTS -->
-                <div class="w3-row w3-padding-16"  id="projects">
-                    <div class="w3-twothird w3-container">
+                <div class="w3-padding-16"  id="projects">
+                    <div class="w3-container">
                         <h1 class="w3-text-teal">Projects</h1>
                         <div>
                             <h4><b>Searching in Handwritten Czech Documents</b></h4>
@@ -122,8 +138,8 @@
                 </div>
 
                 <!-- TEACHING -->    
-                <div class="w3-row w3-padding-16"  id="teaching">
-                    <div class="w3-twothird w3-container">
+                <div class="w3-padding-16"  id="teaching">
+                    <div class="w3-container">
                         <h1 class="w3-text-teal">Teaching</h1>
                         <div>
                             <h4><b>Nature Inspired Algorithms (Přírodou inspirované algoritmy) <a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NAIL119">[NAIL119]</a></b></h4>
@@ -144,27 +160,32 @@
                 </div>
 
                 <!-- PUBLICATIONS -->
-                <div class="w3-row w3-padding-16"  id="publications">
-                    <div class="w3-twothird w3-container">
+                <div class="w3-padding-16"  id="publications">
+                    <div class="w3-container">
                     <h1 class="w3-text-teal">Publications</h1>
                         <ul>
-                            <li>MACKOVÁ, Kateřina; STRAKA, Milan. Reading Comprehension in Czech via Machine Translation and Cross-Lingual Transfer. In: International Conference on Text, Speech, and Dialogue. Springer, Cham, 2020. p. 171-179./li>
+                            <li>MACKOVÁ, Kateřina; STRAKA, Milan. <i>Reading Comprehension in Czech via Machine Translation and Cross-Lingual Transfer.</i> In: International Conference on Text, Speech, and Dialogue. Springer, Cham, 2020. p. 171-179.</li>
                         </ul>
                     </div>
                 </div>
-            </div>   
-        
-        
-          <!-- FOOTER -->
-          <footer id="myFooter">
-              <div class="w3-container w3-center w3-theme-l2 w3-padding-6">
-                  <p>This is the end of the page.</p>
-              </div>
-              <div class="w3-container w3-center w3-theme-l1">
-                  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-              </div>
-          </footer>
+            </div>  
+			
+			<!-- FOOTER -->
+			<footer id="myFooter">
+			  <div class="w3-container w3-center w3-theme-l2 w3-padding-8">
+				  <p>
+					This is the end of the page. 
+					<a href="#about"><i class="fa fa-arrow-circle-up"></i></a>
+				  </p>
+			  </div>
+			  <div class="w3-container w3-center w3-theme-l1">
+				  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+			  </div>
+			</footer>
 		</div>
+
+	
+		
         <script>
         </script>
     </body>
