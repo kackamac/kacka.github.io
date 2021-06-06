@@ -24,30 +24,49 @@
 			text-align: justify;
 			position: relative;
         }
-
+		#myNavbar{
+			margin-left:20%
+		}
+		
 		@media screen and (max-width: 1000px) {
 		  .left, .w3-main, .right {
 			width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
 		  }
+		  
+		  #myNavbar{
+			margin-left:0;
+		  }
 		}
-
+		
 		.w3-row {
 			margin: 3%;
 		}
 		
-
     </style>
 
     <body>
         <!-- NAVBAR -->
-        <div class="w3-top">
-            <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-                <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-white" style="margin-left:20%">About</a>
-                <a href="#projects" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projects</a>
-                <a href="#teaching" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Teaching</a>
-                <a href="#publications" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Publications</a>
-            </div>
-        </div>
+		<div class="w3-top w3-black">
+			<div class="w3-bar" id="myNavbar"> 
+				<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+					<i class="fa fa-bars"></i>
+				</a>
+				<a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user-circle"></i> About</a>
+				<a href="#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cogs"></i> Projects</a>
+				<a href="#teaching" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> Teaching</a>
+				<a href="#publications" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-quote-left"></i> Publications</a>
+			</div>
+
+			<!-- Navbar for small screens -->
+			<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+				<a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-user-circle"></i> About</a>
+				<a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-cogs"></i> Projects</a>
+				<a href="#teaching" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-book"></i> Teaching</a>
+				<a href="#publications" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-quote-left"></i> Publications</a>
+			</div>
+		</div>
+
+
 
         <div class="w3-main">
             <div class="w3-row w3-padding-32">
@@ -187,6 +206,15 @@
 	
 		
         <script>
+			// Used to toggle the menu on small screens when clicking on the menu button
+			function toggleFunction() {
+				var x = document.getElementById("navDemo");
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+				} else {
+					x.className = x.className.replace(" w3-show", "");
+				}
+			}
         </script>
     </body>
 </html>
